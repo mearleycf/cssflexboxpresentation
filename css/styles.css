@@ -1,0 +1,792 @@
+/* this is for custom styling added by the author           */
+/* ### WebKit-Margin-Before and -After
+normalize.css doesn't remove webkit-margin-before, and margin settings don't override margin before and after.
+   ==================================================
+   ==================================================
+   ================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+/* ===[ Fixing the wonky thing where images were getting super stretched out of shape ]===
+   ==================================================
+   ==================================================
+   ================================================== */
+img {
+    max-width: 100%
+}
+/* #Flexbox Layout Module
+Instead of using a grid system, we're using [flexbox](http://dev.w3.org/csswg/css-flexbox/) for layout. Flexbox is built to be responsive out of the box, and also allows for nearly any possible configuration of containers without hacks.
+   ==================================================
+   ==================================================
+   ================================================== */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.isInline {
+    display: -inline-flex
+}
+.isRow {
+    flex-direction: row
+}
+.isRowReverse {
+    flex-direction: row-reverse
+}
+.isColumn {
+    flex-direction: column
+}
+.isColumnReverse {
+    flex-direction: column-reverse
+}
+.isSingle {
+    flex-wrap: nowrap
+}
+.flexWrap {
+    flex-wrap: wrap
+}
+.isMultiple.isReverse {
+    flex-wrap: wrap-reverse
+}
+.spaceBetween {
+    justify-content: space-between
+}
+.spaceAround {
+    justify-content: space-around
+}
+.justifyCenter {
+    justify-content: center
+}
+.justifyEnd {
+    justify-content: flex-end
+}
+.justifyStart {
+    justify-content: flex-start
+}
+.contentCenter {
+    align-content: center
+}
+.alignCenter {
+    align-items: center
+}
+.alignEnd {
+    align-items: flex-end
+}
+.alignStart {
+    align-items: flex-start
+}
+.alignBaseline {
+    align-items: baseline
+}
+.selfCenter {
+    align-self: center
+}
+.selfStart {
+    align-self: flex-start
+}
+.selfEnd {
+    align-self: flex-end
+}
+.selfAuto {
+    align-self: auto
+}
+.selfBaseline {
+    align-self: baseline
+}
+.contentCenter {
+    align-content: center;
+}
+.contentStretch {
+    align-content: stretch; 
+}
+.flexNone {
+    flex: 0 0 auto
+}
+.flexInitial {
+    flex: 0 1 auto
+}
+.flexAuto {
+    flex: 1 1 auto
+}
+.flex0050 {
+    flex: 0 0 50%
+}
+.flexOne0auto {
+    flex: 1 0 auto
+}
+.flexOne {
+    flex: 1
+}
+.flexRowStart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flexRowSpaceBetween {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flexColumnStart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.flexRowNoWrap {
+    flex-flow: row nowrap
+}
+.dontFlex {
+    flex: none
+}
+.isFull {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.isHalf {
+    flex-basis: 50%;
+    margin: 0 1px;
+    max-width: 49%;
+}
+.isThirds {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+.isTwoThirds {
+    flex-basis: 67%;
+    max-width: 67%;
+}
+.isQuarters {
+    flex-basis: 24%;
+    margin: 0 2px;
+    max-width: 24%;
+}
+.isThreeFifths {
+    flex-basis: 59%;
+    margin: 0 2px;
+    max-width: 59%;
+}
+.isTwoFifths {
+    flex-basis: 39%;
+    margin: 0 2px;
+    max-width: 39%;
+}
+.isOneFifth {
+    flex-basis: 19%;
+    margin: 0 2px;
+    max-width: 19%;
+}
+.isFourFifths {
+    flex-basis: 79%;
+    margin: 0 2px;
+    max-width: 79%;
+}
+.isOneTenth {
+    flex-basis: 9%;
+    margin: 0 2px;
+    max-width: 9%;
+}
+.isThreeTenths {
+    flex-basis: 29%;
+    margin: 0 2px;
+    max-width: 29%;
+}
+.isSevenTenths {
+    flex-basis: 69%;
+    margin: 0 2px;
+    max-width: 69%;
+}
+.isNineTenths {
+    flex-basis: 89%;
+    margin: 0 2px;
+    max-width: 89%;
+}
+.flexGrow {
+    flex-grow: 2
+}
+.flexChild > div {
+    display: flex
+}
+
+/* general height and width declarations 
+   ==================================================
+   ==================================================
+   ================================================== */
+
+.fuseRelative {
+    position: relative
+}
+.fuseWide5 {
+    width: 5%
+}
+.fuseWide10 {
+    width: 10%
+}
+.fuseWide15 {
+    width: 15%
+}
+.fuseWide20 {
+    width: 20%
+}
+.fuseWide25 {
+    width: 25%
+}
+.fuseWide30 {
+    width: 30%
+}
+.fuseWide35 {
+    width: 35%
+}
+.fuseWide40 {
+    width: 40%
+}
+.fuseWide45 {
+    width: 45%
+}
+.fuseWide50 {
+    width: 50%
+}
+.fuseWide55 {
+    width: 55%
+}
+.fuseWide60 {
+    width: 60%
+}
+.fuseWide65 {
+    width: 65%
+}
+.fuseWide70 {
+    width: 70%
+}
+.fuseWide75 {
+    width: 75%
+}
+.fuseWide80 {
+    width: 80%
+}
+.fuseWide85 {
+    width: 85%
+}
+.fuseWide90 {
+    width: 90%
+}
+.fuseWide95 {
+    width: 95%
+}
+.fuseWide100 {
+    width: 100%
+}
+.fuseWide40px {
+    width: 40px
+}
+.fuseHeight5 {
+    height: 5%
+}
+.fuseHeight15 {
+    height: 15%
+}
+.fuseHeight20 {
+    height: 20%
+}
+.fuseHeight25 {
+    height: 25%
+}
+.fuseHeight30 {
+    height: 30%
+}
+.fuseHeight35 {
+    height: 35%
+}
+.fuseHeight40 {
+    height: 40%
+}
+.fuseHeight45 {
+    height: 45%
+}
+.fuseHeight50 {
+    height: 50%
+}
+.fuseHeight55 {
+    height: 55%
+}
+.fuseHeight60 {
+    height: 60%
+}
+.fuseHeight65 {
+    height: 65%
+}
+.fuseHeight70 {
+    height: 70%
+}
+.fuseHeight75 {
+    height: 75%
+}
+.fuseHeight80 {
+    height: 80%
+}
+.fuseHeight85 {
+    height: 85%
+}
+.fuseHeight90 {
+    height: 90%
+}
+.fuseHeight95 {
+    height: 95%
+}
+.fuseHeight100 {
+    height: 100%
+}
+.fuseMaxWide40px {
+    max-width: 40px
+}
+.fuseMaxWide55px {
+    max-width: 55px
+}
+.fuseMaxWide65px {
+    max-width: 65px
+}
+.marginAuto {
+    margin: auto
+}
+.marginTopAuto {
+    margin-top: auto
+}
+.marginBottomAuto {
+    margin-bottom: auto
+}
+.marginLeftAuto {
+    margin-left: auto
+}
+.marginRightAuto {
+    margin-right: auto
+}
+.margin1rem {
+    margin: 1rem
+}
+.margin1rem0 {
+    margin: 1rem 0
+}
+.margin01rem {
+    margin: 0 1rem
+}
+.margin001rem0 {
+    margin: 0 0 1rem 0
+}
+.margin01rem00 {
+    margin: 0 1rem 0 0
+}
+.margin1rem000 {
+    margin: 1rem 0 0 0
+}
+.margin0001rem {
+    margin: 0 0 0 1rem
+}
+.margin0Auto {
+    margin: 0 auto
+}
+.marginAuto0 {
+    margin: auto 0
+}
+.margin0P5rem00 {
+    margin: 0 0.5rem 0 0
+}
+.margin00p5rem0 {
+    margin: 0 0 0.5rem 0
+}
+.headerGap {
+    margin-top: 40px
+}
+.marginBottom20px {
+    margin-bottom: 20px
+}
+.padding5top {
+    padding-top: 5px
+}
+.padding5bottom {
+    padding-bottom: 5px
+}
+.padding5 {
+    padding: 5px
+}
+.padding5LeftRight {
+    padding: 0 5px
+}
+.padding5TopBottom {
+    padding: 5px 0
+}
+/* overall styling
+   ==================================================
+   ==================================================
+   ================================================== */
+
+html {
+    height: 100%
+}
+body {
+    background: #ececec;
+    color: #212121;
+    height: 100%;
+}
+header .rightContainer {
+    margin-right: 30px
+}
+/* header styling   
+   ==================================================
+   ==================================================
+   ================================================== */
+
+.headerBlue {
+    background-color: #4285f4;
+    color: #ffffff;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    top: 0;
+    width: 100%;
+    z-index: 22;
+    padding: 10px 10px 10px 0;
+}
+header .leftContainer {
+    border-width: 1px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    height: 100%;
+}
+.searchContainer {
+    box-sizing: border-box;
+    height: 36px;
+    z-index: 1;
+    max-width: 66.6%;
+    width: 66.6%;
+}
+.searchContainerLeft {
+    background: rgba(255,255,255,.15);
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searchContainerLeft .searchInput {
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    height: 36px;
+}
+.searchInput::-webkit-input-placeholder {
+    color: #ffffff
+}
+/* content
+   ==================================================
+   ==================================================
+   ================================================== */
+
+content {
+    height: 100%
+}
+.updatesText {
+    color: #f4511e
+}
+.promosText {
+    color: #00acc1
+}
+.purchasesText {
+    color: #6d4c41
+}
+.socialText {
+    color: #d23f31
+}
+.sectionHeader {
+    color: #999999
+}
+.emailContainer {
+    height: 100%;
+    width: 70%;
+}
+.contentRow {
+    padding: 10px
+}
+.emailGroup {
+    cursor: pointer;
+    white-space: nowrap;
+    background: #ffffff;
+    position: relative;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0,0,0,.12), 0 2px 4px rgba(0,0,0,.24);
+    padding: 12px 0px;
+    text-overflow: ellipsis;
+    white-space:normal;
+    min-height: 40px;
+}
+.emailGroup .leftContainer {
+    min-width:125px;
+}
+.emailGroupIcon {
+    width: 24px;
+    margin: 0 24px;
+}
+.emailGroupTitle {
+    min-width: 184px;
+    padding-right:10px;
+}
+.emailGroupSubject {
+    max-width:340px;
+}
+.emailGroupCount {
+    padding-right:10px;
+}
+.expandedDetails .emailGroupSubject {
+    padding-left:20px;
+}
+.selected::after {
+    background: #046bc7;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+.expandedDetails {
+    background: #c1c1c1;
+    padding:20px;
+    overflow: scroll;
+    cursor: pointer;
+}
+.expandedDetails .updatesText {
+    min-height:40px;
+}
+.flexLineGroup {
+    cursor: pointer;
+    background: #ffffff;
+}
+.flexLineSample {
+    border-radius:10px;
+    background-color: red;
+    padding:10px; 
+    margin: 5px;
+    flex: 1 0 auto;
+}
+/* margin for first section 
+   ==================================================
+   ==================================================
+   ================================================== */
+
+.firstSection {
+    margin-top: 20px
+}
+/* icons
+   ==================================================
+   ==================================================
+   ================================================== */
+
+.leftContainer .menuIcon24px {
+    background-image: url(../img/ic_menu_wht_1x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    opacity: 0.75;
+    padding: 16px 24px;
+    -webkit-user-drag: none;
+}
+.searchIcon24px {
+    background-image: url(../img/ic_search_wht_24dp_r1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    width: 72px;
+    background-position-x: 50%;
+    padding: 0 20px;
+}
+.appsIcon {
+    background-image: url(../img/v1_376447c3.png);
+    background-position: -69px -1667px;
+    background-size: 112px 2011px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+.notificationsIcon {
+    background-image: url(../img/v1_376447c3.png);
+    background-position: -69px -390px;
+    background-size: 112px 2011px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 5px;
+    padding: 0 2px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    box-shadow: none;
+    margin-left: 15px;
+}
+.profileIcon32px {
+    background-image: url(../img/mikeprofileinbox.jpg);
+    background-size: 32px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    display: block;
+    margin: -1px;
+    box-shadow: none;
+    margin-left: 15px;
+}
+.hangoutsIcon24px {
+    background-image: url(../img/ic_chat_wt_2x.png);
+    cursor: pointer;
+    -webkit-user-drag: none;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.sweepIcon24px {
+    background-image: url(../img/ic_sweep_blk_24dp_r4.png);
+    cursor: pointer;
+    opacity: 0.25;
+    outline: 0;
+    padding: 0;
+}
+div[class$='Icon24px'],
+div[class$='icon24px']:before {
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+}
+.sweepIcon:before {
+    border-radius: 50%;
+    top: -4px;
+    left: -4px;
+    bottom: -4px;
+    right: -4px;
+    margin: auto;
+    padding: 4px;
+    position: absolute;
+    content: ' ';
+}
+.plusContainer {
+    background-color: #db4437;
+    height: 56px;
+    position: relative;
+    width: 56px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0, 0, 0, .28);
+    box-sizing: content-box;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    transform: scale(1) rotate(360deg);
+    transition: transform 150ms cubic-bezier(.4,0,1,1);
+    margin: 23px;
+}
+.plusIcon24px {
+    background-image: url(../img/bt_speed_dial_1x.png)
+}
+.updatesIcon24px {
+    background-image: url(../img/ic_updates_24px_clr_r3.png)
+}
+.promosIcon24px {
+    background-image: url(../img/ic_offers_24px_clr_r3.png)
+}
+.socialIcon24px {
+    background-image: url(../img/ic_social_24px_clr_r3.png)
+}
+.actionsIcon24px {
+    background-image: url(../img/ic_mark-pinned_blk_24dp_r4.png)
+}
+.snoozeIcon24px {
+    background-image: url(../img/ic_mark-upcoming_blk_24dp_r4.png)
+}
+.checkIcon24px {
+    background-image: url(../img/ic_mark-done_blk_24dp_r4.png)
+}
+.moreIcon24px {
+    background-image: url(../img/ic_overflow_blk_24dp_r7.png)
+}
+.emailGroupActions div[class$='Icon24px'] {
+    padding: 0 8px;
+    opacity: 0.3;
+}
+.emailGroupActions div[class$='Icon24px']:hover {
+    opacity: 1
+}
+.emailOuterGroup.expanded {
+    background-color: #dddddd;
+    border: Rgba(0,0,0,.4);
+    box-sizing: border-box;
+    padding: 20px 16px;
+}
+
+/* the pin widget
+   ==================================================
+   ==================================================
+   ================================================== */
+
+.pinnedWidget {
+    margin: 0 11px 0 20px
+}
+.pinnedBackground {
+    cursor: pointer;
+    height: 17px;
+    outline: none;
+    padding-left: 12px;
+    width: 34px;
+}
+.pinnedBackgroundInner {
+    background-color: #3262ba;
+    border-radius: 8px;
+    height: 100%;
+    position: relative;
+    width: 34px;
+    transition: background-color 150ms cubic-bezier(.4,0,.2,1);
+}
+.pinIcon {
+    background-color: #5892fc;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    height: 25px;
+    margin-top: -4px;
+    position: absolute;
+    width: 25px;
+    transform: translateX(-12px);
+    transition: transform 150ms,cubic-bezier(.4,0,.2,1),background-color,150ms,cubic-bezier(.4,0,.2,1);
+}
+.pinIconInner {
+    background-image: url(../img/bt_pin_toggle_off_15dp_r3.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    background-size: 15px;
+    -webkit-transition: -webkit-transform 150ms,cubic-bezier(.4,0,.2,1),opacity,150ms,cubic-bezier(.4,0,.2,1);
+    transition: transform 150ms,cubic-bezier(.4,0,.2,1),opacity,150ms,cubic-bezier(.4,0,.2,1);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
